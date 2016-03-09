@@ -10,8 +10,8 @@ A raspberry pi with Rasbian OS makes the perfect development network for Ethereu
 3. Copy it to a location in $PATH (i.e. /usr/bin/local) as an administrator
 > sudo cp geth /usr/bin/geth
 
-4. Run geth to make sure it works.  If so, ctrl+c to exit.
-> geth
+4. Increase permissions for geth so port binding works
+> sudo chmod a+x /usr/bin/geth
 
 5. Generate an account
 > geth account new
